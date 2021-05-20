@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>O nama</title>
+      <link rel="stylesheet" href="../static/style.css">
+    <style media="screen">
+      img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.a {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:200px;margin-right:200px;margin-top:100px;
+}
+
+      {% if bla %}
+      #log {display: none;}
+      {% endif %}
+      {% if not bla %}
+      #lgo {display: none;}
+      {% endif %}
+    </style>
+  </head>
+  <body style="background-image: url('/static/img.jpg');">
+
+    <div style="margin-left:50px;margin-right:50px;margin-bottom:50px;"class="topnav">
+  <a class="active" href="/">Pocetna</a>
+  <a href="#kontakt">Kontakt</a>
+  <a href="about">O nama</a>
+  {%if bla%}
+  <a href="#narudzba">Narudzbe</a>
+  {% endif %}
+
+  {% if bla %}
+  <a id="lgo" style="float:right;" href="logout">Odjava</a>
+  {% endif %}
+  <a id="log" style="float: right;" href="login">Prijava</a>
+  </div>
+
+    <h1 style="font-size:80px;text-align:center;""><b>Restoran FIPU</b></h1>
+    <hr style="margin-top:30px;margin-bot:50px;">
+
+
+
+    <div class="a">
+  <p>Prehrana za studente koji studiraju na pulskim visokoškolskim institucijama organizirana je u novom restoranu i pizzeriji u neposrednoj blizini Studentskog doma, Preradovićeva 28b.</p>
+<p>
+Radno vrijeme od 1. listopada. 2020.
+</p><p>
+Restoran linija pon - sub  12:00 do 19:00 sati , nedjelja 12:00 do 14:00 sati.
+</p><p>
+Pizzeria  pon - sub 12:00h do 19:00h. Nedjeljom zatvorena.</p></div></div>
+  </body>
+</html>
